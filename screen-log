@@ -20,4 +20,9 @@ screenrc="`mktemp`"
 
 echo "logfile $logfile" > "$screenrc"
 
+echo "Starting screen $screenname, conf file $screenrc:"
+cat "$screenrc"
+echo ''
+echo "args: $@"
+
 screen -c "$screenrc" -L -S "$screenname" "$@"
