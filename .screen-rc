@@ -29,6 +29,5 @@ alias sle=screen-log-env
 defn sled screen-log-env-detach
 
 export SCREEN_LOG_DIR="$HOME/sld"
-mkdir -p "$SCREEN_LOG_DIR"
 
 defn sck screen-quit
